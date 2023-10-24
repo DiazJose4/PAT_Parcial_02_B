@@ -12,6 +12,7 @@ private:
 	Node* minStac;
 	Node* header = nullptr;
 	int minimo;
+	int Prueba2;
 
 public:
 	MinStack();
