@@ -1,15 +1,27 @@
 #pragma once
 class MinStack
 {
+private:
+	struct Node
+	{
+		int data;
+		Node* next;
+	};
+
+	Node* Stack;
+	Node* minStac;
+	Node* header = nullptr;
+	int minimo;
+
 public:
 	MinStack();
 
-	void push(int value);
+	void push(int value);//Agrega
 
-	void pop();
+	void pop();//Elimina ultimo en ser agregado
 
-	int top();
+	int top();//Retorna ultimo agregado sin eliminar
 
-	int getMin();
+	int getMin();//Retorna el menor
 };
 
